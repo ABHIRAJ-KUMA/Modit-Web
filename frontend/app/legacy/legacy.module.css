@@ -1,0 +1,120 @@
+.container {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.hero {
+  background: linear-gradient(180deg, #f5faf7 0%, #ffffff 100%);
+  border-radius: 12px;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 2rem;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.04);
+}
+
+.eyebrow {
+  color: #0f766e;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.heroTitle {
+  font-size: 2.4rem;
+  margin: 0.6rem 0 1rem 0;
+  color: #0b1220;
+}
+
+.heroCopy {
+  color: #475569;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.buttonPrimary {
+  background: #0f766e;
+  color: white;
+  padding: 0.9rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.buttonSecondary {
+  background: white;
+  color: #0f766e;
+  padding: 0.85rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid #e6eefb;
+}
+
+.heroPanel {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 10px;
+  border: 1px solid #eef2f7;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.statCard {
+  background: #f8fafc;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.catCard {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #eef2f7;
+}
+
+.productsGrid {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.productCard {
+  background: white;
+  padding: 0.9rem;
+  border-radius: 10px;
+  border: 1px solid #eef2f7;
+  text-align: center;
+}
+
+.footerLegacy {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid #eef2f7;
+  color: #6b7280;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .categories { grid-template-columns: repeat(2, 1fr); }
+  .productsGrid { grid-template-columns: repeat(2, 1fr); }
+}
